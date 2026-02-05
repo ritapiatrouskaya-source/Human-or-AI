@@ -3,6 +3,8 @@ pandas>=1.5
 numpy>=1.26.0
 scikit-learn==1.6.1
 seaborn
+spacy==3.8.11
 
 joblib>=1.2
+
 
