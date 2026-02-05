@@ -14,6 +14,41 @@ from nltk.stem import WordNetLemmatizer
 import nltk
 import pandas as pd
 import numpy as np
+import base64
+
+with open("ai.png", "rb") as f:
+    encoded = base64.b64encode(f.read()).decode()
+
+st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url("data:image/jpg;base64,{encoded}");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }}
+
+    h1 {{
+        text-align: center;
+        margin-top: 120px;
+    }}
+
+    div[data-testid="stTextArea"] {{
+        max-width: 600px;
+        margin: 180px auto 0 auto;
+        background: rgba(255,255,255,0.75);
+        backdrop-filter: blur(6px);
+        border-radius: 14px;
+        border: 1px solid rgba(255,255,255,0.4);
+        transform: translateX(-40px);
+    }}
+
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 
 class W2VTransformer(BaseEstimator, TransformerMixin):
     def __init__(self, model):
@@ -75,7 +110,7 @@ def trunc(text, max_words=800):
 
 st.title("Human or AI?")
 
-st.write('Enter your text')
+
 
 text = st.text_area("Enter your text", height=200)
 
