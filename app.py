@@ -80,8 +80,13 @@ class W2VTransformer(BaseEstimator, TransformerMixin):
 nltk.download("wordnet")
 nltk.download("omw-1.4")
 
+@st.cache_resource
+def load_models():
+    xg = joblib.load("xg.joblib")
+    ...
+    return xg
 
-model = joblib.load("xg.joblib")
+model = load_models()
 
 
 
@@ -132,4 +137,5 @@ if st.button("Analyse"):
             st.success(f"Human-written text (confidence: {proba[0]:.2f})")
         else:
             st.warning(f"AI-generated text (confidence: {proba[1]:.2f})")
+
 
