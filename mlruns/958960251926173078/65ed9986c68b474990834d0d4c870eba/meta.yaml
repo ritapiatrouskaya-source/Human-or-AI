@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/studium/literatur stud/Case Study/ML/Human vs. AI/mlruns/958960251926173078/65ed9986c68b474990834d0d4c870eba/artifacts
+end_time: 1776595001098
+entry_point_name: ''
+experiment_id: '958960251926173078'
+lifecycle_stage: active
+run_id: 65ed9986c68b474990834d0d4c870eba
+run_name: xgb_bow_t500
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1776594987400
+status: 3
+tags: []
+user_id: ritap
