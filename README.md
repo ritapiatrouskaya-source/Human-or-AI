@@ -7,7 +7,6 @@ This project aims to classify whether a text was written by a human or generated
 The model is trained on the dataset:
 https://www.kaggle.com/datasets/shanegerami/ai-vs-human-text
 
-* Reduced to 5000 essays for faster experimentation
 * Binary classification:
 
   * 1 — AI-generated
