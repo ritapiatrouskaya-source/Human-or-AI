@@ -37,6 +37,9 @@ After threshold tuning:
 * F1-score: ~0.89
 * Improved balance between precision and recall
 
+* <img width="1013" height="627" alt="image" src="https://github.com/user-attachments/assets/4d1a811d-edfc-41d7-ab20-2bf020226f1e" />
+
+
 ## 🚀 Features
 
 * End-to-end ML pipeline
