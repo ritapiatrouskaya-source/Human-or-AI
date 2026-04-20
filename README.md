@@ -58,6 +58,8 @@ After threshold tuning:
 
 Streamlit app allows real-time prediction of text origin (human vs AI).
 
+https://human-or-ai-irgw9pjesozfdmwaqn8rfp.streamlit.app/
+
 ## 📦 Notes
 
 * Dataset is not included due to size limitations
