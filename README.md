@@ -23,6 +23,18 @@ https://www.kaggle.com/datasets/shamimhasan8/ai-vs-human-text-dataset?utm_source
 * Generalization tested on an external dataset
 * Model calibration via threshold tuning
 
+## 🔬 Experiment Tracking (MLflow)
+
+MLflow was used to track and compare multiple experiments during model development.
+
+* Logged different model configurations (e.g., hyperparameters, vectorization settings)
+* Compared performance metrics across runs
+* Identified the best-performing model based on F1-score and generalization ability
+* Stored model artifacts for reproducibility
+
+This enabled a structured experimentation process and helped select a robust model before applying threshold tuning.
+
+
 ## 📈 Results
 
 Initial model:
